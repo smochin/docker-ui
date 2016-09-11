@@ -12,18 +12,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <AnchorPane prefHeight="34.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
    </top>
-   <left>
-      <AnchorPane prefHeight="366.0" prefWidth="150.0" style="-fx-background-color: #cecece;" BorderPane.alignment="CENTER">
-         <effect>
-            <ColorAdjust />
-         </effect>
-      </AnchorPane>
-   </left>
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -32,16 +24,7 @@
                   <AnchorPane prefHeight="24.0" prefWidth="471.0" style="-fx-background-color: #aeceaa;" BorderPane.alignment="CENTER" />
                </top>
                <center>
-                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #aeaeae;" BorderPane.alignment="CENTER">
-                     <children>
-                        <TableView layoutX="62.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                          <columns>
-                            <TableColumn prefWidth="75.0" text="C1" />
-                            <TableColumn prefWidth="75.0" text="C2" />
-                          </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #aeaeae;" BorderPane.alignment="CENTER" />
                </center>
             </BorderPane>
          </children>
@@ -50,4 +33,61 @@
    <bottom>
       <AnchorPane prefHeight="15.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
    </bottom>
+   <left>
+      <Accordion prefHeight="351.0" prefWidth="139.0" BorderPane.alignment="CENTER">
+        <panes>
+          <TitledPane style="-fx-background-color: ;" text="Images">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Hyperlink text="Hub" />
+                        <Hyperlink text="Pull" />
+                        <Hyperlink text="List" />
+                     </children>
+                  </VBox>
+               </content>
+          </TitledPane>
+          <TitledPane text="Container">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Hyperlink text="Create" />
+                        <Hyperlink text="List" />
+                     </children>
+                  </VBox>
+               </content>
+          </TitledPane>
+          <TitledPane text="Ambientes">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Hyperlink text="Create" />
+                        <Hyperlink text="List" />
+                     </children>
+                  </VBox>
+               </content>
+          </TitledPane>
+            <TitledPane text="Providers">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </TitledPane>
+            <TitledPane text="Analitycs">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </TitledPane>
+            <TitledPane text="Configuraçoes">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </TitledPane>
+            <TitledPane text="Backup" wrapText="true">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+   </left>
 </BorderPane>
