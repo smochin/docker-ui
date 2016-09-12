@@ -24,7 +24,7 @@
                   <AnchorPane prefHeight="24.0" prefWidth="471.0" style="-fx-background-color: #aeceaa;" BorderPane.alignment="CENTER" />
                </top>
                <center>
-                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #aeaeae;" BorderPane.alignment="CENTER" />
+                  <AnchorPane fx:id="container" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #aeaeae;" BorderPane.alignment="CENTER" />
                </center>
             </BorderPane>
          </children>
